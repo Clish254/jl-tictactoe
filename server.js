@@ -174,7 +174,6 @@ io.of("/game").on("connection", function (socket) {
     socket.on("badass", (data) => {
       io.of("/game").emit("badass", data);
     });
-
     socket.on("sleeping", (data) => {
       io.of("/game").emit("sleeping", data);
     });
@@ -198,7 +197,6 @@ io.of("/game").on("connection", function (socket) {
     socket.on("message", (msg) => {
       io.of("/game").emit("message", msg);
     });
-
     // Event to inform player that the opponent left
     socket.on("disconnect", function () {
       if (opponentOf(socket)) {

@@ -184,7 +184,6 @@
   socket.on("love", (data) => {
     $(".output").append(`<p>${data}</p>`);
   });
-
   //clap reaction
   $("#clap").on("click", () => {
     socket.emit("clap", "👏");
@@ -328,7 +327,5 @@
     // await leaders.forEach((lead) => {
 
     // });
-    console.log(leaders);
   });
 })();
-

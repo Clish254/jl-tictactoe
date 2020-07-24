@@ -16,7 +16,7 @@
     <div id="message">Waiting for Player 2</div>
     <div class="top-board">
         <p class="leaderboard"><span class="trigger badge p-2">Leaderboard</span></p>
-        <p class="replay"><a href="" class="badge badge-warning p-2" id="replay" title="Try reconnecting with user">Connect</a></p>
+        <p class="replay"><a href="" class="badge badge-warning p-2" id="replay" title="Try reconnecting with user">Reconnect</a></p>
         <p class="username"><strong class="badge badge-primary badge-pill p-2">Username: </strong> <span
                 id="username"><%= data.username %></span></p>
         <p class="wins"><strong class="badge badge-pill badge-success p-2">Wins: </strong> <span id="wins"><%= data.wins %></span>
@@ -27,13 +27,13 @@
         </p>
     </div>
     <div>Invite link: <a href="" style="text-decoration: none;cursor: text;"><small id="invite"
-                style="color: #ff6883;font-weight: bold;"></small></a>
+                style="color: #03a9f4;font-weight: bold;"></small></a>
     </div>
     <div class="leader-board">
         <p class="loader"></p>
         <div class="list">
+            <big>Leader Board</big>
             <ul id="leads">
-                <big>Leader Board</big>
             </ul>
         </div>
     </div>
@@ -58,7 +58,7 @@
             </div>
             <div class="message-box">
                 <div class="content">
-                    <input type="text" class="message" id="chat-message">
+                    <input type="text" class="message" id="chat-message" placeholder="type mesage">
                     <input type="submit" class="submit" id="send" value="send">
                     <span id="love" class="reaction">💓</span>
                     <span id="happy" class="reaction">😀</span>
